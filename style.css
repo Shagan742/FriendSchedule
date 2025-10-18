@@ -1,3 +1,30 @@
 #rectangle {
     background-color: blue;
 }
+
+html {
+    overflow-x:hidden;
+}
+
+.col-1 {
+    background-color:rgb(255, 158, 158);
+    border:2px solid black;
+    border-radius:19px;
+}
+
+.col-1:hover {
+    background-color:rgb(255, 114, 114);
+    transition-duration: 0.3s;
+}
+
+h1 {
+    color:black;
+    font-size:60px;
+}
+
+body {
+    background-image:linear-gradient(white,rgb(255, 172, 172));
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}

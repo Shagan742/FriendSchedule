@@ -2,13 +2,13 @@ let output = document.getElementById("output")
 
 
 async function loadSchedule(file) {
-
+output.innerHTML=''
     try {
         const res = await fetch(file);
         const data = await res.json();
 
         data.forEach(class => {
-            output.insertAdjacentHTML('beforeend', `
+            output.insertAdjacentHTML('beforeend',`
             <div class="card h-100">
   <div class="card-img" id="rectangle">
   <div class="card-body">
