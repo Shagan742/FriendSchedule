@@ -1,13 +1,15 @@
 let output=document.getElementById("output")
 
 
-async function loadSchedule() {
+async function loadSchedule(file) {
+
     try {
-        const res = await fetch("shagan.json")
-        const data = await res.json();
-        data.forEach(class => {
-            output.innerHTML+=`
-            <div class="card" style="width: 18rem;">
+const res=await fetch(file);
+    const data=await res.json();
+    
+    data.forEach(class => {
+output.insertAdjacentHTML('beforeend', `
+            <div class="card h-100">
   <div class="card-img" id="rectangle">
   <div class="card-body">
     <p class="card-text">
@@ -20,19 +22,25 @@ async function loadSchedule() {
     </ul>
     </p>
   </div>
-</div>
-            `
-        });
+</div>`)
+    })
     } catch(err) {
-        output.innerHTML='Error loading schedule: ' + err
+        output.insertAdjacentHTML('beforeend', 'Error: ' + err)
     }
+    
+        
+    
 }
 
-loadSchedule();
 
-
-// document.getElementById("output").addEventListener("keydown", key=> {
-//     if(key.key==='1') {
-//         aaa
-//     }
-// })
+document.getElementById("output").addEventListener("keydown", btn=> {
+    if(btn.key==='1') {
+        loadSchedule("shagan.json")
+    } else if(btn.key==='2') {
+        loadSchedule("kristen.json")
+    } else if(btn.key==='3') {
+        loadSchedule("yasmina.json")
+    } else if(btn.key==='4') {
+        loadSchedule("shagan.json")
+    }
+})
