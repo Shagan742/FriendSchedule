@@ -1,18 +1,15 @@
-#rectangle {
-    background-color: blue;
-}
 
 html {
     overflow-x:hidden;
 }
 
-.col-1 {
+#btn {
     background-color:rgb(255, 158, 158);
     border:2px solid black;
     border-radius:19px;
 }
 
-.col-1:hover {
+#btn:hover {
     background-color:rgb(255, 114, 114);
     transition-duration: 0.3s;
 }
@@ -27,4 +24,32 @@ body {
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    color:black;
+}
+
+ul {
+    text-align:left;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.card {
+    border-radius:30px;
+    background-color:antiquewhite;
+}
+
+.gottaEdit {
+    font-size:25px;
+}
+
+li {
+    font-size:17px;
+    list-style: none;
+    margin-bottom:10px;
+}
+
+.instruction {
+    font-size:18px;
 }
