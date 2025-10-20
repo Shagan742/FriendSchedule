@@ -1,34 +1,31 @@
 [
-   {
-      "personName":"Kristen"
-   },
     {
-       "className": "AP Physics 2",
-       "teacher": "Mr. Son",
-       "roomNumber": "D208",
-       "period": 1,
-       "subjectArea": "Science" 
-    },
-    {
-       "className": "Health 12 Lab",
-       "teacher": "Mrs. Scollo",
-       "roomNumber": "C128",
-       "period": 2,
-       "subjectArea": "Health" 
-    },
-    {
-       "className": "AP Calculus AB",
+       "className": "Precalculus",
        "teacher": "Mr. Sandoval",
        "roomNumber": "A219",
-       "period": 3,
+       "period": 1,
        "subjectArea": "Math" 
     },
     {
+       "className": "Honors Spanish 4",
+       "teacher": "Mrs. Saraceni",
+       "roomNumber": "A202",
+       "period": 2,
+       "subjectArea": "Elective" 
+    },
+    {
        "className": "BCC ENG121 The Writing Process",
-       "teacher": "Mr. Sauter",
-       "roomNumber": "E111",
-       "period": 4,
+       "teacher": "Mrs. Reganato",
+       "roomNumber": "E117",
+       "period": 3,
        "subjectArea": "English" 
+    },
+    {
+       "className": "AP Psychology",
+       "teacher": "Mrs. Foti",
+       "roomNumber": "A115",
+       "period": 4,
+       "subjectArea": "Science" 
     },
     {
        "className": "AP Computer Science A",
@@ -38,11 +35,11 @@
        "subjectArea": "Math" 
     },
     {
-       "className": "Honors Band 2",
-       "teacher": "Mr. Ippolito",
-       "roomNumber": "C103",
+       "className": "Leadership & Action",
+       "teacher": "Mr. McGeough",
+       "roomNumber": "A119",
        "period": 6,
-       "subjectArea": "Art" 
+       "subjectArea": "Elective" 
     },
     {
        "className": "Honors NJIT IS219 Advanced Website Development WDP",
