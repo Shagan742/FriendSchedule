@@ -28,24 +28,24 @@
        "subjectArea": "Science" 
     },
     {
-       "className": "AP Computer Science A",
-       "teacher": "Mrs. Rehwinkel",
-       "roomNumber": "A234",
+       "className": " Health 12",
+       "teacher": "Mr. Sininsky",
+       "roomNumber": "C128",
        "period": 5,
-       "subjectArea": "Math" 
+       "subjectArea": "Health" 
     },
     {
-       "className": "Leadership & Action",
+       "className": "Leadership in Action",
        "teacher": "Mr. McGeough",
        "roomNumber": "A119",
        "period": 6,
        "subjectArea": "Elective" 
     },
     {
-       "className": "Honors NJIT IS219 Advanced Website Development WDP",
-       "teacher": "Mr. Kilgore",
-       "roomNumber": "B111",
+       "className": "Honors Anatomy and Physiology",
+       "teacher": "Mrs. Carrione",
+       "roomNumber": "D202",
        "period": 7,
-       "subjectArea": "21st Century" 
+       "subjectArea": "Science" 
     }
 ]
