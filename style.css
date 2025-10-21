@@ -9,6 +9,10 @@ html {
     border-radius:19px;
 }
 
+.btn {
+    font-weight:bold;
+}
+
 #btn1:hover, #reset:hover, #btn2:hover, #btn3:hover {
     background-color:rgb(255, 114, 114);
     transition-duration: 0.3s;
@@ -37,7 +41,6 @@ ul {
 .name {
     font-size: 40px;
      font-family: "Playwrite AU TAS", cursive;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -61,5 +64,5 @@ li {
 }
 
 .instruction {
-    font-size:18px;
+    font-size:19.5px;
 }
