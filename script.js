@@ -2,22 +2,30 @@ let output = document.getElementById("output")
 
 
 async function loadSchedule(file) {
-output.innerHTML=''
+    output.innerHTML = ''
 
 
-//this edits the the file string to let me put an h3 where I can identify whose schedule I'm showing
-let personName=file.slice(1, file.length-5);
-let capitalizedInitial=file.charAt(0).toUpperCase();
-let completedName=capitalizedInitial+personName;
+    //this edits the the file string to let me put an h3 where I can identify whose schedule I'm showing
+    let personName = file.slice(1, file.length - 5);
+    let capitalizedInitial = file.charAt(0).toUpperCase();
+    let completedName = capitalizedInitial + personName;
+
+
+
+
+    //try to get the json file and do stuff with it
     try {
         const res = await fetch(file);
         const data = await res.json();
-output.insertAdjacentHTML('beforeend', `<h3 class="name mt-5 mb-3">${completedName}'s schedule</h3>`)
-        
-        for(const classes of data) {
-            output.insertAdjacentHTML('beforeend',`
 
-                <div class="col-4 m-3">
+        //whoever's schedule is shown is identified
+        output.insertAdjacentHTML('beforeend', `<h3 class="name mt-5 mb-3">${completedName}'s schedule</h3>`)
+        
+//for every class of my data i got, put the person's info abt each class in cards
+        for (const classes of data) {
+            const html = `
+
+                <div class="col-md-4 col-sm-10 my-3">
             <div class="card h-100">
   <div class="card-body">
     <p class="card-text">
@@ -31,7 +39,8 @@ output.insertAdjacentHTML('beforeend', `<h3 class="name mt-5 mb-3">${completedNa
     </p>
   </div>
 </div>
-</div>`)
+</div>`
+            output.insertAdjacentHTML('beforeend', html)
 
 
         }
@@ -43,19 +52,33 @@ output.insertAdjacentHTML('beforeend', `<h3 class="name mt-5 mb-3">${completedNa
 
 }
 
-loadSchedule("shagan.json")
-document.getElementById("btn").addEventListener("keydown", btn => {
-    if (btn.key === '1') {
+
+document.addEventListener("keydown", e => {
+if (e.key === '1') {
         loadSchedule("kristen.json")
-    } else if (btn.key === '2') {
-        loadSchedule("yasmina.json")
-    } else if (btn.key === '3') {
-        loadSchedule("amelia.json")
-    } else {
-       loadSchedule("shagan.json")
+        return;
     }
+}) 
 
-    
+document.addEventListener("keydown", e => {
+if (e.key === '2') {
+        loadSchedule("yasmina.json")
+        return;
+    }
+}) 
 
+document.addEventListener("keydown", e => {
+if (e.key === '3') {
+        loadSchedule("amelia.json")
+        return;
+    }
+}) 
+
+
+
+
+document.getElementById("reset").addEventListener("click", () => {
+    loadSchedule("shagan.json")
 })
 
+loadSchedule("shagan.json")

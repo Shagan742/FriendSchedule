@@ -3,13 +3,13 @@ html {
     overflow-x:hidden;
 }
 
-#btn {
+#btn1, #reset, #btn2, #btn3 {
     background-color:rgb(255, 158, 158);
     border:2px solid black;
     border-radius:19px;
 }
 
-#btn:hover {
+#btn1:hover, #reset:hover, #btn2:hover, #btn3:hover {
     background-color:rgb(255, 114, 114);
     transition-duration: 0.3s;
 }
@@ -17,6 +17,9 @@ html {
 h1 {
     color:black;
     font-size:60px;
+     font-family: "Playwrite AU TAS", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -33,11 +36,17 @@ ul {
 
 .name {
     font-size: 40px;
+     font-family: "Playwrite AU TAS", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .card {
     border-radius:30px;
-    background-color:antiquewhite;
+    background-image: url(imgs/bgimg.jpg);
+    border:2px solid rgb(255, 135, 151);
+    box-shadow:4px 4px 10px 2px rgb(170, 69, 83);
 }
 
 .gottaEdit {
@@ -48,6 +57,7 @@ li {
     font-size:17px;
     list-style: none;
     margin-bottom:10px;
+
 }
 
 .instruction {
